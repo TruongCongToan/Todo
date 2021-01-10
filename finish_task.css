@@ -75,7 +75,7 @@
   }
 
   #input_box:focus{
-    border-bottom:4px solid #2c786c;
+    /* border-bottom:4px solid #2c786c; */
     outline:none;
   }
 
@@ -94,10 +94,10 @@
     transition: 0.3s;
    }
 
-   #input_date:focus{
+   /* #input_date:focus{
     border-bottom:4px solid #2c786c;
     outline:none;
-  }
+  } */
 
   ::-webkit-datetime-edit-fields-wrapper {
     background: white; margin-left: 50px;
@@ -191,7 +191,8 @@
   }
 
   .task_container:hover{
-    box-shadow: -2px 2px #75b79e;
+    /* box-shadow: -2px 2px #75b79e; */
+    background-color:#75b79e;
   }
 
   #task_data{

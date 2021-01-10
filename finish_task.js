@@ -14,14 +14,15 @@
 
   function add_task(){
     input_box = document.getElementById("input_box");
-    input_date = document.getElementById("input_date");
+    selected_date = document.querySelector(".selected-date");
+    console.log(selected_date.textContent)
 
-    if(input_box.value.length != 0 && input_date.value.length != 0){
+    if(input_box.value.length != 0 && selected_date.textContent.length != 0){
       // our boxes have data and we take database
       var key = firebase.database().ref().child("unfinished_task").push().key;
       var task = {
         title: input_box.value,
-        date: input_date.value,
+        date: selected_date.textContent,
         key: key
       };
 
