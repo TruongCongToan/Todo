@@ -14,12 +14,10 @@
   <link rel="icon" href="to-do-list.png" type="image/png">
   <link rel="stylesheet" href="./css/date-picker.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="finish_task.css" type="text/css">
+  <link rel="stylesheet" href="./css/finish_task.css" type="text/css">
 
   <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"> </script>
   <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"> </script>
-
-  <script src="finish_task.js"> </script>
 </head>
 
 
@@ -37,14 +35,14 @@
 
   <div id="content_container">
     <div id="finish_task_header">
-      <p> Ghi chú </p>
+      <p> Todo List </p>
     </div>
 
 
 
     <div id="task_input_container">
 
-      <input id="input_box" size="30px" type="text" placeholder="Điền thông tin ..." />
+      <input id="input_box" size="30px" type="text" placeholder="Việc cần làm ..." />
       
       <!-- Date Picker Custom Control -->
       <div class="date-picker">
@@ -63,12 +61,12 @@
       
       <!-- <input id="input_date" type="date" /> -->
       <button id="input_button" onclick="add_task();">
-        Enter Task
+        Lưu
       </button>
     </div>
 
     <!-- Task To Do -->
-    <p class="header"> Danh sách công việc </p>
+    <p class="header"> Danh sách việc cần làm </p>
     <div class="container">
 
 
@@ -102,6 +100,7 @@
   </div>
 
   <script src="./js/date-picker.js"> </script>
+  <script src="./js/finish_task.js"> </script>
 </body>
 
 </html>
